@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    
+    header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 1em;
+        text-align: center;
+    }
+    
+    main {
+        flex: 1;
+        padding: 1em;
+    }
+    
+    .content-box {
+        background-color: white;
+        padding: 2em;
+        margin: 1em 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+    }
+    
+    footer {
+        background-color: #4CAF50;
+        color: white;
+        text-align: center;
+        padding: 1em;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <main>
+        <section class="content-box">
+            <p>This is the content box.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>
